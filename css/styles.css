@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Funnel Display", serif;
+}
+
+:root {
+  --bg: #1A5319;
+  --nav: #1a1a19;
+  --font: #fff;
+  --btn: #921a40;
+  --btn-hover: #c75b7a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--font);
+}
+
+header nav {
+  background-color: var(--nav);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+header nav h1 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header nav form {
+  display: flex;
+  justify-content: center;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+form input[type="text"],
+button[type="submit"] {
+  border: none;
+  font-size: 1.125rem;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  background-color: var(--btn);
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--btn-hover);
+}
+
+.recipe-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav form {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
