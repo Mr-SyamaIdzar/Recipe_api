@@ -65,7 +65,7 @@ form button[type="submit"]:hover {
   background-color: var(--btn-hover);
 }
 
-.recipe-container {
+#recipeContainer {
   text-align: center;
   margin-top: 20px;
 }
