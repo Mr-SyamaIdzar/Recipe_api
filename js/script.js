@@ -16,9 +16,17 @@ const fetchRecipes = async (query) => {
     recipeDiv.innerHTML = `
       <img src="${meal.strMealThumb}">
       <h3>${meal.strMeal}</h3>
-      <p>${meal.strArea}</p>
-      <p>${meal.strCategory}</p>
+      <p><span>${meal.strArea}</span> Dish</p>
+      <p>Belongs to <span>${meal.strCategory}</span> Category</p>
     `;
+
+    const btn = document.createElement("button");
+    btn.textContent = "View Recipe";
+    recipeDiv.appendChild(btn);
+
+    btn.addEventListener("click", () => {
+      openRecipePopup(meal);
+    });
 
     recipe.appendChild(recipeDiv);
   });
