@@ -8,14 +8,15 @@
 }
 
 :root {
-  --bg: #1a5319;
-  --nav: #1a1a19;
+  --bg: #76453B;
+  --nav: #322C2B;
   --font: #fff;
   --btn: #921a40;
   --btn-hover: #c75b7a;
   --bg-r: #fff;
   --font-r: #000;
   --font-r-p: #4a4a4a;
+  --bg-popup: #B19470;
 }
 
 body {
@@ -119,6 +120,20 @@ form button[type="submit"]:hover,
   background-color: var(--btn);
   color: var(--font);
   transition: background-color 0.2s ease-in-out;
+}
+
+.recipe-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-popup);
+  -webkit-transform: translate(-50%, -50%);
+  border-radius: 12px;
+  width: 40%;
+  height: 60vh;
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 600px) {
