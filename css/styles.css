@@ -8,11 +8,13 @@
 }
 
 :root {
-  --bg: #1A5319;
+  --bg: #1a5319;
   --nav: #1a1a19;
   --font: #fff;
   --btn: #921a40;
   --btn-hover: #c75b7a;
+  --bg-recipe: #fff;
+  --font-recipe: #000;
 }
 
 body {
@@ -68,7 +70,21 @@ form button[type="submit"]:hover {
 #recipeContainer {
   text-align: center;
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  /* width: 80%;
+  margin: 10px auto; */
 }
+/* 
+.recipe {
+  background-color: var(--bg-recipe);
+  display: flex;
+  flex-direction: column;
+  color: var(--font-recipe);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+} */
 
 @media screen and (max-width: 600px) {
   header nav {
