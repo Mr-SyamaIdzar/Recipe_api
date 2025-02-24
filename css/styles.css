@@ -51,7 +51,8 @@ form input[type="text"] {
 }
 
 form input[type="text"],
-button[type="submit"] {
+button[type="submit"],
+.recipe-close-btn {
   border: none;
   font-size: 1.125rem;
   padding: 10px;
@@ -66,7 +67,8 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover,
-.recipe button:hover {
+.recipe button:hover,
+.recipe-close-btn:hover {
   background-color: var(--btn-hover);
 }
 
@@ -92,6 +94,11 @@ form button[type="submit"]:hover,
     -5px -5px 10px rgba(34, 34, 34, 0.5);
   cursor: pointer;
   max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe:hover {
+  transform: scale(1.02);
 }
 
 .recipe h3 {
@@ -136,6 +143,37 @@ form button[type="submit"]:hover,
   font-size: 1.25rem;
   transition: all 0.5s ease-in-out;
   overflow-y: scroll;
+}
+
+.recipe-details-content {
+  padding: 30px;
+}
+
+.recipeName {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.ingredientList li {
+  margin: 10px 0 0 -20px;
+}
+
+.recipeInstruction p {
+  line-height: 1.875rem;
+}
+
+.recipe-close-btn {
+  background-color: var(--btn);
+  color: var(--font);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
