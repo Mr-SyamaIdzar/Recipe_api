@@ -8,15 +8,15 @@
 }
 
 :root {
-  --bg: #76453B;
-  --nav: #322C2B;
+  --bg: #76453b;
+  --nav: #322c2b;
   --font: #fff;
   --btn: #921a40;
   --btn-hover: #c75b7a;
   --bg-r: #fff;
   --font-r: #000;
   --font-r-p: #4a4a4a;
-  --bg-popup: #B19470;
+  --bg-popup: #b19470;
 }
 
 body {
@@ -134,6 +134,8 @@ form button[type="submit"]:hover,
   width: 40%;
   height: 60vh;
   font-size: 1.25rem;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 600px) {
